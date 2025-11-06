@@ -8,23 +8,48 @@
     <title>WDD231 Home</title>
     <meta name="author" content="First Last">
     <meta name="description" content="First Last WDD 231 - Web Frontend Development this is the chamber homepage">
+    <!-- <link rel="stylesheet" href="styles/normalize.css"> -->
+     
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
     <header>
         <img src="images/favicon-32x32.png" alt="#">
-        <h1>Welcome to the Homepage</h1>
+        <h1>Home</h1>
         <button type="button" id="menu"></button>
     </header>
+    <nav>
+        <ul class="navigation">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="/chamber/index.html">Chamber</a></li>
+            <li><a href="#">Final</a></li>
+        </ul>
+    </nav>
     <main>
-        <h1>hello</h1>
+        <h1>Hello this is the main section</h1>
+        <section>
+            <h2>This is Section 1</h2>
+            <p>Hello this is content that will go in section 1</p>
+        </section>
+        <section>
+            <h2>This is Section 2</h2>
+            <p>Hello this is content that will go in section 2</p>
+        </section>
+        <section>
+            <h2>This is Section 3</h2>
+            <p>Hello this is content that will go in section 3</p>
+        </section>
     </main>
     <footer>
+        <p>GitHub Link</p>
         <p>
-            &copy; <span id="currentYear"></span> A Nuge
+            &copy; <span id="currentYear"></span> A Nuge - Arizona
         </p>
+        <p id="lastModified"></p>
     </footer>
+    <script src="scripts/hamburger.js"></script>  
+    <script src="scripts/getdate.js"></script>
 </body>
-
+<!-- This is a comment -->
 </html>
