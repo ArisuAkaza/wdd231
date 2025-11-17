@@ -26,9 +26,11 @@ const displayMembers = (membersData) => {
         website.textContent = business.website;
         website.href = business.website;
         website.target = "_blank";
-        logo.src = business.logo;
+        logo.src = business.image;
         logo.alt = `Logo of ${business.name}`;
         logo.loading = "lazy";
+        logo.width = 200;
+        logo.height = 200;
 
         card.appendChild(logo);
         card.appendChild(name);
