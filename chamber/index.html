@@ -1,11 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="icon" href="../images/favicon.ico">
+    <title>Mesa Chamber of Commerce Home Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet">
+    <meta name="author" content="AA Nuge">
+    <meta name="description" content="A Nuge WDD 231 - Web Frontend Development this is the chamber Directory">
+    <meta property="og:url" content="https://www.churchofjesuschrist.org/study/scriptures">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="A Nuge - WDD 231 - Web Frontend Development Chamber Directory Page">
+    <meta property="og:description" content="A Nuge WDD 231 - Web Frontend Development this is the chamber Directory">
+    <meta property="og:image" content="../images/favicon-32x32.png">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/hamburger.css">
+    <link rel="stylesheet" href="styles/larger.css">
 </head>
+
 <body>
+    <header>
+        <img src="../images/favicon-32x32.png" alt="#">
+        <h1>Chamber of Commerce Home</h1>
+        <button type="button" id="menu"></button>
+    </header>
     
+    <nav>
+        <ul class="navigation">
+            <li><a href="/wdd231/chamber/index.html" class="active">Home</a></li>
+            <li><a href="/wdd231/chamber/discover.html">Discover</a></li>
+            <li><a href="/wdd231/chamber/join.html">Join</a></li>
+            <li><a href="/wdd231/chamber/directory.html">Directory</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/building.webp" media="(min-width: 640px)">
+                <img src="images/building_wide.webp" alt="Building">
+            </picture>
+            <div class="herolabel">
+                <p>Mesa Centre</p>
+            </div>
+        </div>
+        <h2>Welcome to our home page!</h2>
+        <section class="card">
+            <h3>About the Chamber of Commerce</h3>
+            <p>The Mesa Chamber of Commerce is dedicated to supporting local businesses and fostering economic growth in the Mesa area. We provide resources, networking opportunities, and advocacy for our members.</p>
+        <a href="/wdd231/chamber/join.html">Join</a>
+        </section>
+        <!-- call to action link -->
+        <section class="card">
+            <h3>Here are some current events in Mesa!</h3>
+            <ul>
+                <li>A new aquatic center opened in the county</li>
+                <li>Our public school district has more job openings</li>
+                <li>Farmers Market Shipments arrived on time!</li>
+            </ul>
+        </section>
+        <!-- weather section -->
+
+        <section class="card">
+            <h3>What the weather looks like!</h3>
+            <p>70F</p>
+
+        </section>
+        <!-- spotlights -->
+         <!-- display rank icons colorcoded in future -->
+        <section class="card">
+            <h3>Here our some of our spotlights!</h3>
+            <ul>
+                <li>Aurora Headquarters Tour</li>
+                <li>Greenfield Corner</li>
+                <li>Job Openings</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>Contact: (480) 987-6543</p>
+        <p>
+            &copy; <span id="currentYear"></span> A Nuge - Arizona
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getDate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <!-- <script src="scripts/directory.js"></script> -->
 </body>
+
 </html>

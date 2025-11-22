@@ -1,0 +1,58 @@
+/* hamburger and nav when view is less than 600px */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+/* nav width will max at 768 */
+nav {
+    max-width: 768px;
+}
+
+
+
+
+#menu::before {
+    content: "≡";
+}
+
+#menu.open::before {
+    content: "❌";
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style: none;
+    background-color: #333;
+    color: #fff;
+}
+
+.navigation a {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navigation a:hover {
+    background-color: #bbb;
+    color: #333;
+    font-weight: 700;
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
+    display: block;
+}
+
+.active::before {
+    content: "📍";
+    /* just a wayfinding symbol for the user */
+}
